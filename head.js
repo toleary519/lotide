@@ -6,12 +6,12 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const sum = function(a, b) {
-  return a + b;
+
+const head = function(a, b) {
+  return a[0];
 };
 
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(sum(1, 2) === 3);
-assertEqual(sum(1, 20) === 3);
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
