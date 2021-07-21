@@ -7,12 +7,26 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const sum = function(a, b) {
-  return a + b;
+const eqArrays = function(arrayOne, arrayTwo) {
+
+  for (let i = 0; i < arrayOne.length; i++) {
+    if (arrayOne[i] !== arrayTwo[i]) {
+      return false;
+    } 
+  }  
+return true;
 };
 
+// take the item in first index of list one and list two and confirm they are the same
+// do this for all items in the list
 
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual(sum(1, 2) === 3);
-assertEqual(sum(1, 20) === 3);
+
+assertEqual(eqArrays([1, 2, 100], [1, 2, 3]), true); // => should PASS
+
+
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
+
+eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
+eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+
