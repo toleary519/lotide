@@ -18,4 +18,4 @@ return output;
 };
 // console.log(countLetters("LHL"));
 // console.log(countLetters("thomas"));
-// console.log(countLetters("hello hello"));
+console.log(countLetters("hello hello"));

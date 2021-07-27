@@ -1,16 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log("Assertion Failed");
-  } else {
-    console.log("Assertion Passed");
-  }
-};
+const assertEqual = require('./assertEqual')
 
-
-const head = function(a, b) {
+const head = function(a) {
   return a[0];
 };
-
 
 
 assertEqual(head([5,6,7]), 5);
