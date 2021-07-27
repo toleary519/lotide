@@ -14,6 +14,7 @@ const without = function(arrayFull, arrayRem) {
   return keepArr;
   };
 
+module.exports = without; 
 
-console.log(without([1, 2, 3], [1])); // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
+// console.log(without([1, 2, 3], [1])); // => [2, 3]
+// console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]

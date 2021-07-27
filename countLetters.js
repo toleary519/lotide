@@ -16,6 +16,5 @@ let spacelessString = string.split(" ").join("");
   }
 return output;
 };
-// console.log(countLetters("LHL"));
-// console.log(countLetters("thomas"));
-console.log(countLetters("hello hello"));
+
+module.exports = countLetters; 
